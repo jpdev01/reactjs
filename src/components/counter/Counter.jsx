@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Buttons from './Buttons';
 
 import Display from './Display';
 import Step from './Step';
@@ -46,10 +47,7 @@ export default class Counter extends Component {
 
                 <Display value={this.state.value}></Display>
 
-                <div>
-                    <button onClick={this.increment}>+</button>
-                    <button onClick={this.decrement}>-</button>
-                </div>
+                <Buttons onInc={this.increment} onDec={this.decrement}></Buttons>
             </div>
         )
     }
