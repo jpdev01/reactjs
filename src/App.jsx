@@ -11,6 +11,7 @@ import Interation from './components/Iteration'
 
 import './App.css'
 import Iteration from './components/Iteration'
+import Conditional from './components/Conditional'
 
 
 export default props => (
@@ -45,6 +46,10 @@ export default props => (
 
         <Card title="Repetição">
             <Iteration></Iteration>
+        </Card>
+
+        <Card title="Condicional">
+            <Conditional number={10}></Conditional>
         </Card>
 
     </div>
