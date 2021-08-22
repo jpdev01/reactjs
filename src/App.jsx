@@ -7,22 +7,24 @@ import Parameters from './components/Parameters'
 import Childrens from './components/children'
 import children from './components/children'
 import Card from './components/card/Card'
+import Interation from './components/iteration'
 
 import './App.css'
+import iteration from './components/iteration'
 
 
 export default props => (
     <div className="App">
-        <Card titulo="Hello World">
+        <Card title="Hello World">
             <FirstComponent></FirstComponent>
         </Card>
-        <Card titulo="Com Parametros">
-            <Parameters titulo="Hello"
-                subtitulo="world"></Parameters>
+        <Card title="Com Parametros">
+            <Parameters title="Hello"
+                subtitle="world"></Parameters>
         </Card>
 
 
-        <Card titulo="Com filhos">
+        <Card title="Com filhos">
             <children>
                 <ul>
                     <li>Banana</li>
@@ -34,11 +36,15 @@ export default props => (
         </Card>
 
 
-        <Card titulo="Exercício 01">
+        <Card title="Exercício 01">
             <FirstComponent></FirstComponent>
         </Card>
-        <Card titulo="Exercício 02">
+        <Card title="Exercício 02">
             Conteudo
+        </Card>
+
+        <Card title="Repetição">
+            <iteration></iteration>
         </Card>
 
     </div>

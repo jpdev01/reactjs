@@ -7,7 +7,7 @@ export default props =>
             {props.children}
         </div>
         <div className="Footer">
-            {props.titulo}
+            {props.title}
         </div>
     </div>
 
