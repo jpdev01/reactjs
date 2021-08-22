@@ -17,7 +17,7 @@ export default props => (
         <Card title="Hello World" color="#FA6900">
             <FirstComponent></FirstComponent>
         </Card>
-        <Card title="Com Parametros">
+        <Card title="Com Parametros" color="#ff0000">
             <Parameters title="Hello"
                 subtitle="world"></Parameters>
         </Card>
