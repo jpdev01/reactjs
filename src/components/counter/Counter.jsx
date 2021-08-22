@@ -11,6 +11,12 @@ export default class Counter extends Component {
         }
     }
 
+    setStepValue = (event) => {
+        this.setState({
+            step: +event.target.value
+        });
+    }
+
     increment = () => {
         this.setState({
             value: this.state.value + this.state.step
@@ -34,6 +40,9 @@ export default class Counter extends Component {
             <div>
                 <h2>Contador</h2>
                 <p>Step: {this.state.step}</p>
+                <input type="number" value={this.state.step}
+                onChange={this.setStepValue}></input> 
+
                 <p>Valor: {this.state.value}</p>
 
                 <div>
