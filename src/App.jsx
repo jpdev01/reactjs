@@ -52,6 +52,10 @@ export default props => (
             <Conditional number={10}></Conditional>
         </Card>
 
+        <Card title="Condicional com if">
+            <Conditional number={15}></Conditional>
+        </Card>
+
     </div>
 
 )
