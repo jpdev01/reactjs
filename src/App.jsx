@@ -56,7 +56,7 @@ export default props => (
         </Card>
 
         <Card title="Comunicação direta">
-            <Dad></Dad>
+            <Dad lastName="Freitas"></Dad>
         </Card>
 
     </div>
