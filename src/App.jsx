@@ -81,7 +81,7 @@ export default props => (
             </Card>
 
             <Card title="Contador">
-                <Counter></Counter>
+                <Counter step={10}></Counter>
             </Card>
         </div>
 
