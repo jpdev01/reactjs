@@ -15,7 +15,7 @@ export default props => {
         <div>
             <h2>
                 <ul>
-                    {getProductsList}
+                    {getProductsList()}
                 </ul>
             </h2>
         </div>

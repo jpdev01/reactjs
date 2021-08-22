@@ -7,10 +7,10 @@ import Parameters from './components/Parameters'
 import Childrens from './components/children'
 import children from './components/children'
 import Card from './components/card/Card'
-import Interation from './components/iteration'
+import Interation from './components/Iteration'
 
 import './App.css'
-import iteration from './components/iteration'
+import Iteration from './components/Iteration'
 
 
 export default props => (
@@ -44,7 +44,7 @@ export default props => (
         </Card>
 
         <Card title="Repetição">
-            <iteration></iteration>
+            <Iteration></Iteration>
         </Card>
 
     </div>
