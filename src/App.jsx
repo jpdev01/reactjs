@@ -14,7 +14,7 @@ import Conditional from './components/simple/Conditional'
 
 export default props => (
     <div className="App">
-        <Card title="Hello World">
+        <Card title="Hello World" color="#FA6900">
             <FirstComponent></FirstComponent>
         </Card>
         <Card title="Com Parametros">
@@ -56,4 +56,4 @@ export default props => (
 
     </div>
 
-)
+);
