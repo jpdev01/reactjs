@@ -12,6 +12,8 @@ import Iteration from './components/simple/Iteration'
 import Conditional from './components/simple/Conditional'
 import Dad from './components/communication/direct/Dad'
 
+import Super from './components/communication/indirect/Super'
+
 
 export default props => (
     <div className="App">
@@ -57,6 +59,10 @@ export default props => (
 
         <Card title="Comunicação direta">
             <Dad lastName="Freitas"></Dad>
+        </Card>
+
+        <Card title="Comunicação indireta">
+            <Super></Super>
         </Card>
 
     </div>

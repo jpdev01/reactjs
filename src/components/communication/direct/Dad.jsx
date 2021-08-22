@@ -1,6 +1,7 @@
 import React from 'react'
 import Son from './Son'
 
+
 export default props =>
     <div>
         <Son {...props}>Passando param para o filho</Son>
