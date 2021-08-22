@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import Display from './Display';
+import Step from './Step';
+
 export default class Counter extends Component {
 
     //recebe as props nas classes.
@@ -39,11 +42,9 @@ export default class Counter extends Component {
         return (
             <div>
                 <h2>Contador</h2>
-                <p>Step: {this.state.step}</p>
-                <input type="number" value={this.state.step} style={{width: '60px'}}
-                onChange={this.setStepValue}></input> 
+                <Step actualValue={this.state.step} setStepValue={this.setStepValue}></Step>
 
-                <p>Valor: {this.state.value}</p>
+                <Display value={this.state.value}></Display>
 
                 <div>
                     <button onClick={this.increment}>+</button>
