@@ -8,4 +8,22 @@ function FirstComponent(){
     </div>)
 }
 
+// quando se usa dois elementos adjacentes, é necessáiro estarem dentro de alguma tag.
+function ExampleComponent(){
+    return (
+        <>
+        <h1>Exemplo com tag vazia</h1>
+        </>
+    )
+}
+
+//tambem pode-se usar React.fragment
+function Example2Component(){
+    return (
+        <React.Fragment>
+        <h1>Exemplo com tag vazia</h1>
+        </React.Fragment>
+    )
+}
+
 export default FirstComponent
