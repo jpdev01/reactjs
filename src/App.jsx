@@ -10,6 +10,7 @@ import Card from './components/card/Card'
 import './App.css'
 import Iteration from './components/simple/Iteration'
 import Conditional from './components/simple/Conditional'
+import Dad from './components/communication/direct/Dad'
 
 
 export default props => (
@@ -52,6 +53,10 @@ export default props => (
 
         <Card title="Condicional com if">
             <Conditional number={15}></Conditional>
+        </Card>
+
+        <Card title="Comunicação direta">
+            <Dad></Dad>
         </Card>
 
     </div>
