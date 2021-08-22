@@ -17,65 +17,73 @@ import SubState from './components/state/SubState'
 import SuperState from './components/state/SuperState'
 
 import Input from './components/form/Input'
+import Counter from './components/counter/Counter'
 
 
 export default props => (
     <div className="App">
-        <Card title="Hello World" color="#FA6900">
-            <FirstComponent></FirstComponent>
-        </Card>
-        <Card title="Com Parametros" color="#ff0000">
-            <Parameters title="Hello"
-                subtitle="world"></Parameters>
-        </Card>
+        <h1>Fundamentos React</h1>
+        <div className="Cards">
+            <Card title="Hello World" color="#FA6900">
+                <FirstComponent></FirstComponent>
+            </Card>
+            <Card title="Com Parametros" color="#ff0000">
+                <Parameters title="Hello"
+                    subtitle="world"></Parameters>
+            </Card>
 
 
-        <Card title="Com filhos">
-            <children>
-                <ul>
-                    <li>Banana</li>
-                    <li>Maça</li>
-                    <li>Laranja</li>
-                    <li>Teste</li>
-                </ul>
-            </children>
-        </Card>
+            <Card title="Com filhos">
+                <children>
+                    <ul>
+                        <li>Banana</li>
+                        <li>Maça</li>
+                        <li>Laranja</li>
+                        <li>Teste</li>
+                    </ul>
+                </children>
+            </Card>
 
 
-        <Card title="Exercício 01">
-            <FirstComponent></FirstComponent>
-        </Card>
-        <Card title="Exercício 02">
-            Conteudo
-        </Card>
+            <Card title="Exercício 01">
+                <FirstComponent></FirstComponent>
+            </Card>
+            <Card title="Exercício 02">
+                Conteudo
+            </Card>
 
-        <Card title="Repetição">
-            <Iteration></Iteration>
-        </Card>
+            <Card title="Repetição">
+                <Iteration></Iteration>
+            </Card>
 
-        <Card title="Condicional">
-            <Conditional number={10}></Conditional>
-        </Card>
+            <Card title="Condicional">
+                <Conditional number={10}></Conditional>
+            </Card>
 
-        <Card title="Condicional com if">
-            <Conditional number={15}></Conditional>
-        </Card>
+            <Card title="Condicional com if">
+                <Conditional number={15}></Conditional>
+            </Card>
 
-        <Card title="Comunicação direta">
-            <Dad lastName="Freitas"></Dad>
-        </Card>
+            <Card title="Comunicação direta">
+                <Dad lastName="Freitas"></Dad>
+            </Card>
 
-        <Card title="Comunicação indireta">
-            <Super></Super>
-        </Card>
+            <Card title="Comunicação indireta">
+                <Super></Super>
+            </Card>
 
-        <Card title="Mudança de estado">
-            <SuperState></SuperState>
-        </Card>
+            <Card title="Mudança de estado">
+                <SuperState></SuperState>
+            </Card>
 
-        <Card title="form">
-            <Input></Input>
-        </Card>
+            <Card title="Forms">
+                <Input></Input>
+            </Card>
+
+            <Card title="Contador">
+                <Counter></Counter>
+            </Card>
+        </div>
 
     </div>
 
