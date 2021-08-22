@@ -16,6 +16,8 @@ import Super from './components/communication/indirect/Super'
 import SubState from './components/state/SubState'
 import SuperState from './components/state/SuperState'
 
+import Input from './components/form/Input'
+
 
 export default props => (
     <div className="App">
@@ -69,6 +71,10 @@ export default props => (
 
         <Card title="Mudança de estado">
             <SuperState></SuperState>
+        </Card>
+
+        <Card title="form">
+            <Input></Input>
         </Card>
 
     </div>
