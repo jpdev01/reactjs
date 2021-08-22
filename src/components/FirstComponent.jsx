@@ -26,4 +26,6 @@ function Example2Component(){
     )
 }
 
+
+
 export default FirstComponent
