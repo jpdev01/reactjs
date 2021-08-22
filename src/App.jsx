@@ -2,16 +2,14 @@ import React from 'react'
 
 import ReactDOM from 'react-dom'
 
-import FirstComponent from './components/FirstComponent'
-import Parameters from './components/Parameters'
-import Childrens from './components/children'
-import children from './components/children'
+import FirstComponent from './components/simple/FirstComponent'
+import Parameters from './components/simple/Parameters'
+import Childrens from './components/simple/Children'
 import Card from './components/card/Card'
-import Interation from './components/Iteration'
 
 import './App.css'
-import Iteration from './components/Iteration'
-import Conditional from './components/Conditional'
+import Iteration from './components/simple/Iteration'
+import Conditional from './components/simple/Conditional'
 
 
 export default props => (
