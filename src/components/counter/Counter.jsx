@@ -40,7 +40,7 @@ export default class Counter extends Component {
             <div>
                 <h2>Contador</h2>
                 <p>Step: {this.state.step}</p>
-                <input type="number" value={this.state.step}
+                <input type="number" value={this.state.step} style={{width: '60px'}}
                 onChange={this.setStepValue}></input> 
 
                 <p>Valor: {this.state.value}</p>
