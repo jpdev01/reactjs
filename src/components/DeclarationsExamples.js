@@ -15,3 +15,8 @@ export default () => {
         </div>
     )
 }
+
+export default () =>
+<div>
+    <h1>Exemplo sem chaves</h1>
+</div>
