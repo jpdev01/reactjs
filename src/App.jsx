@@ -13,6 +13,8 @@ import Conditional from './components/simple/Conditional'
 import Dad from './components/communication/direct/Dad'
 
 import Super from './components/communication/indirect/Super'
+import SubState from './components/state/SubState'
+import SuperState from './components/state/SuperState'
 
 
 export default props => (
@@ -63,6 +65,10 @@ export default props => (
 
         <Card title="Comunicação indireta">
             <Super></Super>
+        </Card>
+
+        <Card title="Mudança de estado">
+            <SuperState></SuperState>
         </Card>
 
     </div>

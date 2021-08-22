@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Sub from './Sub'
+import SubState from './SubState'
 
 
 export default props => {
@@ -12,15 +12,18 @@ export default props => {
     // useState = inicia num como zero
     const [num, setNum] = useState(0);
 
-    function onClickBtn(value) {
+    const[text, setText] = useState('Valor');
+
+    function onClickBtn(value, text) {
         setNum(value); // seta valor da variavel num
+        setText(text);
         console.log('Ação de clique! Valor recebido: ' + value);
     }
 
     return (
         <div>
-            <h4>Valor: {num}</h4>
-            <Sub onClickBtnEvent={onClickBtn}></Sub>
+            <h4>{text}: {num}</h4>
+            <SubState onClickBtnEvent={onClickBtn}></SubState>
         </div>
     )
 }
