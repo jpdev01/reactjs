@@ -9,7 +9,7 @@ export default props => {
         const max = 60
         const newNumber = parseInt(Math.random() * (max - min)) + min;
         // se estiver contido
-        return actualNumbers.includes(newNumber) ? generateUncontainedNumbers : newNumber;
+        return actualNumbers.includes(newNumber) ? generateUncontainedNumbers(actualNumbers) : newNumber;
     }
 
     function generateNumbers() {
