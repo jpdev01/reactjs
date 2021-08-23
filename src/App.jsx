@@ -18,6 +18,7 @@ import SuperState from './components/state/SuperState'
 
 import Input from './components/form/Input'
 import Counter from './components/counter/Counter'
+import Mega from './components/mega/Mega'
 
 
 export default props => (
@@ -82,6 +83,10 @@ export default props => (
 
             <Card title="Contador">
                 <Counter step={10}></Counter>
+            </Card>
+
+            <Card title="Mega sena">
+                <Mega qtdeNumbers={8}></Mega>
             </Card>
         </div>
 
