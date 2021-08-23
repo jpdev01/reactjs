@@ -15,7 +15,7 @@ export default props => {
     function generateNumbers() {
         const newNumbers = Array(props.qtdeNumbers)
             .fill(0)
-            .reduce((arrayAcumulado) =>
+            .reduce((arrayAcumulado, newElement) =>
                 [...arrayAcumulado, generateUncontainedNumbers(arrayAcumulado)], [])
             .sort((a, b) => a - b)
         setNumbers(newNumbers);
