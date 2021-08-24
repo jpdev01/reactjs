@@ -14,7 +14,7 @@ function Routes(){
     return (
         <BrowserRouter>
         <Switch>
-            <Route path="/" component={Main}></Route>
+            <Route path="/" exact component={Main}></Route>
             <Route path="/menu" component={Menu}></Route>
             <Route path="/contact" component={Contact}></Route>
             <Route path="/enterprise" component={Enterprise}></Route>
