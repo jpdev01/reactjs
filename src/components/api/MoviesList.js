@@ -12,7 +12,7 @@ class MoviesList extends Component{
     async componentDidMount(){
         const response = await api.get('');
 
-        this.setState({filmes: response.data});
+        this.setState({movies: response.data});
     }
 
 
@@ -23,13 +23,16 @@ class MoviesList extends Component{
                 <p>
                     <strong>Título: </strong>
                     {movie.show.name}
+                    <span>
                     {movie.show.url}
+                    </span>
                     </p>
             </li>
         ));
     }
 
     render(){
+        
         return (
             <div>
                 <h1>Lista de filmes:</h1>
