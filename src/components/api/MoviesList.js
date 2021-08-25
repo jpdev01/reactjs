@@ -9,6 +9,8 @@ class MoviesList extends Component{
 
     //ao usar componentDidMount, e usado imediatamente ao uma atualizacao ocorrer
     // await por causa do async
+
+    // busca na api
     async componentDidMount(){
         const response = await api.get('');
 
